@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  cronicle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chrontasks
+    hostname: chrontasks
+    ports:
+      - "3012:3012"
+    volumes:
+      # Mantém os dados, configurações e logs persistentes mesmo após o container reiniciar
+      - cronicle-data:/opt/cronicle/data
+      - cronicle-logs:/opt/cronicle/logs
+      - cronicle-conf:/opt/cronicle/conf
+      - ./htdocs:/opt/cronicle/htdocs
+    restart: unless-stopped
+
+volumes:
+  cronicle-data:
+  cronicle-logs:
+  cronicle-conf:

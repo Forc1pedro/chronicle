@@ -1,5 +1,5 @@
 /* Styles for Cronicle */
-/* Theme colors: #3f7ed5, #5890db, #7cafda, #9ccffa */
+/* Theme colors: #2E7D32, #5890db, #7cafda, #9ccffa */
 
 div.container {
 	min-width: 750px;
@@ -63,7 +63,7 @@ div.container {
 	cursor: pointer;
 }
 #d_tab_master.active:hover {
-	color: #036 !important;
+	color: #1B5E20 !important;
 	text-decoration: underline;
 }
 
@@ -112,7 +112,7 @@ div.container {
 	text-overflow: ellipsis;	
 }
 .subtitle_menu:hover {
-	color: #3f7ed5;
+	color: #2E7D32;
 }
 
 /* Material Design Icons Additions */
@@ -131,7 +131,7 @@ div.container {
 div.timing_details_label {
 	font-size: 12px;
 	font-weight: bold;
-	color: #3f7ed5;
+	color: #2E7D32;
 	cursor: default;
 	text-shadow: 0px 1px 0px white;
 }
@@ -149,7 +149,7 @@ div.timing_details_content {
 div.plugin_params_label {
 	font-size: 12px;
 	font-weight: bold;
-	color: #3f7ed5;
+	color: #2E7D32;
 	cursor: default;
 	text-shadow: 0px 1px 0px white;
 }
@@ -234,7 +234,7 @@ div.pie-title {
 	text-align: center; 
 	font-weight: bold; 
 	font-size: 15px; 
-	color: #3f7ed5;
+	color: #2E7D32;
 }
 
 canvas.pie {
@@ -299,7 +299,7 @@ div.graph-title {
 	text-align: center; 
 	font-weight: bold; 
 	font-size: 15px; 
-	color: #3f7ed5;
+	color: #2E7D32;
 }
 
 .c3-line { stroke-width: 2px !important; }
@@ -423,14 +423,14 @@ div.schedule_group_button_container > i {
 	box-shadow: 0px 0px 0px 1px #ccc; */
 }
 div.schedule_group_button_container > i:hover {
-	color:#036;
+	color:#1B5E20;
 }
 div.schedule_group_button_container > i.selected {
-	color: #3f7ed5;
+	color: #2E7D32;
 	cursor: default !important;
 }
 div.schedule_group_button_container > i.selected:hover {
-	color: #3f7ed5 !important;
+	color: #2E7D32 !important;
 }
 
 /* Password Stuff */
@@ -568,10 +568,10 @@ div.pagination > table tr td {
 }
 .subtitle_widget a:hover, .subtitle_widget span.link:hover {
 	text-decoration: underline;
-	color: #036;
+	color: #1B5E20;
 }
 #s_watch_job:hover {
-	color: #036 !important;
+	color: #1B5E20 !important;
 }
 
 span.link.abort {
@@ -600,4 +600,74 @@ td.table_label {
 }
 #fe_eu_priv_grp_limit:checked + label:after {
 	content: ':'
+}
+
+
+/* ========================================================= */
+/* --- CHRONTASKS SAFE CUSTOM UI RE-THEME --- */
+/* ========================================================= */
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #f5f6f8 !important; /* light gray background */
+}
+
+#d_header {
+    background-color: #2E7D32 !important; /* dark green */
+    border-bottom: 3px solid #1B5E20 !important;
+}
+
+/* Tabs */
+.tab_bar .tab.active {
+    border-bottom: 3px solid #4CAF50 !important;
+    color: #2E7D32 !important;
+}
+.tab_bar .tab:hover {
+    color: #4CAF50 !important;
+}
+
+/* Buttons */
+.button, .btn {
+    background-color: #2E7D32 !important;
+    border-radius: 6px !important;
+    font-family: 'Inter', sans-serif !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    transition: background-color 0.2s, box-shadow 0.2s !important;
+    color: white !important;
+}
+
+.button:hover, .btn:hover {
+    background-color: #4CAF50 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+    color: white !important;
+}
+
+/* Links */
+a, a:visited {
+    color: #2E7D32;
+}
+a:hover {
+    color: #4CAF50;
+}
+
+/* Subtitle Menus */
+.subtitle_menu:hover {
+	color: #4CAF50 !important;
+}
+
+div.timing_details_label, div.plugin_params_label {
+	color: #2E7D32 !important;
+}
+
+/* Main Container (Card look without breaking JS layout) */
+.master_content_container {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+
+/* Table Hover Effect */
+table.data_table tr:hover td {
+    background-color: #f1f8f1 !important;
 }
