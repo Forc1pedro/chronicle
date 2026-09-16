@@ -19,13 +19,6 @@
 		"unboot": "pixl-boot uninstall",
 		"changelog": "node bin/changelog.js"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jhuckaby/Cronicle"
-	},
-	"bugs": {
-		"url": "https://github.com/jhuckaby/Cronicle/issues"
-	},
 	"keywords": [
 		"cron",
 		"crontab",
